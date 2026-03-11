@@ -1,0 +1,129 @@
+:root {
+    --beige: #F5E9D3;
+    --rosado: #E8AEB7;
+    --verde: #A3C9A8;
+    --texto: #333;
+}
+
+body {
+    background: linear-gradient(120deg, var(--beige), var(--rosado));
+    min-height: 100vh;
+    padding-top: 40px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.card-reserva {
+    border-top: 6px solid var(--verde);
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    background: #fff;
+}
+
+.btn-reservar {
+    background-color: var(--verde);
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.btn-reservar:hover {
+    background-color: var(--rosado);
+    color: white;
+}
+
+#calendar {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+:root {
+    --beige: #F5E9D3;
+    --rosado: #E8C4C4;
+    --verde: #A3C9A8;
+    --dorado: #D4A373;
+    --blanco: #FFFFFF;
+}
+
+body { background: var(--beige); }
+
+.card-holisticas {
+    background: var(--blanco);
+    border-radius: 12px;
+    border: 2px solid var(--rosado);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.titulo { color: var(--dorado); font-weight: bold; }
+.btn-holisticas { background: var(--verde); color: #fff; font-weight: bold; }
+.btn-holisticas:hover { background: var(--dorado); color: #fff; }
+
+#calendario {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid var(--rosado);
+}
+
+/* Fondo general del calendario */
+#calendario {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Cabecera del calendario (mes, botones) */
+.fc-toolbar {
+    background: var(--rosado);
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.fc-toolbar-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Botones de navegación */
+.fc-button {
+    background: #fff !important;
+    color: var(--rosado) !important;
+    border: 1px solid var(--rosado) !important;
+    border-radius: 6px !important;
+    padding: 5px 10px !important;
+    transition: all 0.3s ease;
+}
+
+.fc-button:hover {
+    background: var(--rosado) !important;
+    color: #fff !important;
+}
+
+/* Días del mes */
+.fc-daygrid-day {
+    transition: background 0.2s ease;
+}
+
+.fc-daygrid-day:hover {
+    background: #f9f2f4; /* tono suave rosado */
+    cursor: pointer;
+}
+
+/* Eventos ocupados */
+.fc-event {
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 2px 4px;
+}
+
+.fc-event-title {
+    font-size: 0.85rem;
+}
+
+/* Hoy resaltado */
+.fc-day-today {
+    background: #ffe6eb !important;
+    border: 2px solid var(--rosado) !important;
+}

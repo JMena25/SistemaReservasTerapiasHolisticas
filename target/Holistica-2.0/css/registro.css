@@ -1,0 +1,155 @@
+/* ============================================================
+   PALETA HOLÍSTICAS
+   ============================================================ */
+:root {
+    --beige: #F5E9D3;
+    --rosado: #E8AEB7;
+    --rosado-oscuro: #d48c8c;
+    --rosado-claro: #f3c7cf;
+    --verde: #A3C9A8;
+    --verde-oscuro: #7fb88b;
+    --texto: #333333;
+    --blanco: #ffffff;
+}
+
+/* ============================================================
+   FONDO GENERAL
+   ============================================================ */
+body {
+    background: linear-gradient(120deg, var(--beige), var(--rosado));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+}
+
+/* ============================================================
+   TARJETA DE REGISTRO
+   ============================================================ */
+.card-registro {
+    background: var(--blanco);
+    border-radius: 18px;
+    padding: 40px 32px;
+    width: 100%;
+    max-width: 420px;
+    border-top: 6px solid var(--verde);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Animación */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================================
+   TÍTULO
+   ============================================================ */
+.card-registro h3 {
+    text-align: center;
+    color: var(--verde);
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ============================================================
+   INPUTS
+   ============================================================ */
+.form-control {
+    border: none;
+    border-bottom: 2px solid var(--rosado);
+    border-radius: 0;
+    padding: 10px 5px;
+    background: transparent;
+    transition: border-color 0.3s ease, background 0.3s ease;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: var(--verde);
+    background: rgba(255,255,255,0.4);
+    box-shadow: none;
+}
+
+.input-group-text {
+    background: transparent;
+    border: none;
+    color: var(--rosado-oscuro);
+    font-size: 1.2rem;
+}
+
+/* ============================================================
+   BOTÓN REGISTRO
+   ============================================================ */
+.btn-registro {
+    background: linear-gradient(to right, var(--rosado-oscuro), var(--rosado-claro));
+    color: var(--blanco);
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-registro:hover {
+    background: linear-gradient(to right, var(--rosado), var(--rosado-oscuro));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* ============================================================
+   ALERTAS
+   ============================================================ */
+.alert-error {
+    background-color: var(--rosado);
+    color: var(--blanco);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.alert-success {
+    background-color: var(--verde);
+    color: var(--blanco);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+/* ============================================================
+   LINK INFERIOR
+   ============================================================ */
+.link-login {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.link-login a {
+    color: var(--rosado-oscuro);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link-login a:hover {
+    color: var(--verde);
+    text-decoration: underline;
+}

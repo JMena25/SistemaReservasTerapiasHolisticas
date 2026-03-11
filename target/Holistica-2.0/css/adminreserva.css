@@ -1,0 +1,38 @@
+         :root {
+            --beige: #F5E9D3;
+            --rosado: #E8C4C4;
+            --verde: #A3C9A8;
+            --dorado: #D4A373;
+            --blanco: #FFFFFF;
+        }
+
+        body { background: var(--beige); }
+
+        .titulo {
+            color: var(--dorado);
+            font-weight: bold;
+        }
+
+        .top-menu {
+            background: var(--blanco);
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .card-holisticas {
+            background: var(--blanco);
+            border-radius: 12px;
+            border: 2px solid var(--rosado);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .table-holisticas thead {
+            background: var(--rosado);
+            color: #4a4a4a;
+        }
+
+        .table-holisticas tbody tr:hover {
+            background: var(--beige);
+        }

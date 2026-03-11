@@ -1,0 +1,35 @@
+ .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /*Tarjetas con hover */
+        .card-animated {
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .card-animated:hover {
+            transform: scale(1.04);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+        }
+
+        /* Mini gráficos */
+        .mini-chart {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+        }
+
+        /* Barra superior */
+        .top-menu {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .top-menu button {
+            font-weight: 600;
+        }
